@@ -13,8 +13,7 @@ export class PagePrevey extends React.Component {
             totalPages: 0,           //загальна кількість сторінок
             currentPage: props.match.params.currentPage,          //поточна група сторінок
             numberOfTime: 5,         //кількість елементів на сторінці
-            activePage: props.match.params.currentPage,
-
+            activePage: props.match.params.currentPage
         };
     };
 
