@@ -62,7 +62,9 @@ import {Home} from "./Home";
 import {Message} from "./Message";
 import {PagePrevey} from "./PagePrevey"
 import {HomeArticlesAdmin} from "./articlesAdmin/HomeArticlesAdmin";
-import  {PreveyArticlesAdmin} from "./articlesAdmin/PreveyArticlesAdmin"
+import  {PreveyArticlesAdmin} from "./articlesAdmin/PreveyArticlesAdmin";
+import {PreveyPostArticles} from "./articlesAdmin/PreveyPostArticles";
+import {HomeUserAdmin} from "./userAdmin/HomeUserAdmin"
 
 class RouteConfigExample extends React.Component{
 
@@ -76,7 +78,10 @@ class RouteConfigExample extends React.Component{
                         <Route exact path="/page/:currentPage" component={PagePrevey}/>
                         <Route exact path="/messages/:id/author/:authorID" component={Message}/>
                         <Route exact path="/articlesAdmin/" component={HomeArticlesAdmin}/>
-                        <Route exact path="/articlesAdmin/page/:num" component={PreveyArticlesAdmin}/>
+                        <Route exact path="/articlesAdmin/page/:currentPage" component={PreveyArticlesAdmin}/>
+                        <Route exact path="/articlesAdmin/post/" component={PreveyPostArticles}/>
+                        <Route exact path="/articlesAdmin/post/:articleId" component={PreveyPostArticles}/>
+                        <Route exact path="/userAdmin/" component={HomeUserAdmin}/>
                     </div>
                 </div>
             </Router>

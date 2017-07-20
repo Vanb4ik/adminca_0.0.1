@@ -1,6 +1,14 @@
-
-.panel_left_photo
-{
+.td_img {
+  width: 10%;
+}
+.td_title,.td_status {
+  width: 15%;
+}
+.td_btn{
+  width:20%;
+  text-align: left;
+}
+.panel_left_photo {
   width: 150px;
   height: auto;
 }
